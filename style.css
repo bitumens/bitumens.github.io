@@ -1,0 +1,171 @@
+body {
+  font-family: 'DynaPuff', cursive;
+  background-color: seagreen;
+  color: white;
+  max-height: 1vw;
+}
+
+button {
+  font-family: inherit;
+  border-radius: 10px;
+  color: black;
+  background-color: cornsilk;
+  border: 2px solid white;
+  margin-inline: 10px;
+  margin: 4px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.2);
+}
+
+button:hover {
+  background-color: coral;
+  border: 2px solid coral;
+}
+
+button:active {
+  background-color: cornsilk;
+  transform: translateY(2px);
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+}
+
+.header {
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 5vh;
+  margin-bottom: 10vw;
+}
+
+.canvas {
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.2);
+}
+
+.canvas-size-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border: 0.5px solid cornsilk;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.2);
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	background-color: cornsilk;
+  border-radius: 10px;
+}
+input[type="color"]::-webkit-color-swatch {
+	border-radius: 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 10rem;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.2);
+}
+
+/* Remove default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/*** Chrome, Safari, Opera and Edge Chromium Styles ***/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #fff8dc;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -8px; /* Center thumb on the track */
+  background-color: #000000;
+  border-radius: 7rem;
+  height: 1.5rem;
+  width: 1rem;
+}
+
+/*** Firefox Styles ***/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #fff8dc;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #000000;
+  border: none; /*Remove extra border that FF applies*/
+  border-radius: 7rem;
+  height: 1.5rem;
+  width: 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+}
+
+.user-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4px;
+}
+
+.cell-container {
+  background-color: whitesmoke;
+  border-radius: 0.5%;
+  display: grid;
+  box-sizing: content-box;
+  height: 38vw;
+  width: 38vw;
+  padding: 4px;
+}
+
+.help-info {
+  background-color: cornsilk;
+  font-size: 14px;
+  color: rgb(69, 65, 65);
+  max-height: 200px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.5s;
+  overflow-y: hidden;
+}
+
+.help-active {
+  max-height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}

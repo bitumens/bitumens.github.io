@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+    <title>Drawable</title>
+</head>
+<body>
+    <div class="content">
+        <div class="canvas">
+            <div class="cell-container"></div>
+        </div>
+            <div class="user-options-container">
+                <h1 class="header">Drawable</h1>
+                <div class="color-select-container">
+                    <input type="color" id="color-select"></input>
+                </div>
+                <div class="button-container">
+                    <button id="reset">reset canvas</button>
+                    <button id="eraser">eraser</button>
+                    <button id="rainbow">rainbow!</button>
+                </div>
+                <div class="canvas-size-container">
+                    <div class="canvas-size-display">canvas size: 16x16</div>
+                    <input type="range" id="canvas-size-input" min="2" max="64" value="16">
+                </div>
+            </div>
+    </div>
+    <div class="info-container">
+        <button id="help-button">Need Help?</button>
+        <div class="help-info">
+            1. Choose a colour using the <em><strong>colour box</strong></em>, right above the buttons to the left.
+            <br>
+            <br>2. Click and hold on the canvas to start drawing.</br>
+            <br>3. The buttons are self-explanatory. Try them out!</br>
+            <br>4. Click and drag the slider below <em><strong>canvas size</strong></em> to change the pixel ratio of the canvas.</br>
+        </div>
+    <div class="footer"></div>
+</body>
+</html>
